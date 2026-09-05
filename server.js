@@ -4,9 +4,9 @@ const path = require("path");
 const url = require("url");
 
 const PORT = process.env.PORT || 3000;
-const ROOT = path.join(__dirname, "..");
-const PUBLIC = path.join(ROOT, "public");
-const DATA = path.join(ROOT, "data");
+const ROOT = __dirname;
+const PUBLIC = ROOT;
+const DATA = ROOT;
 
 const MIME = {
   ".html": "text/html; charset=utf-8",
