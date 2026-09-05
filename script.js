@@ -202,56 +202,78 @@ function row(label,value){
      installed speechSynthesis voice.
 */
 let currentAudio = null;
+let audioRequestId = 0;
 
 function speakText(text){
   text = String(text || "").trim();
   if(!text) return;
 
-  // Stop any previous pronunciation.
+  // Give every click a unique ID.
+  // This prevents an older audio request from interfering
+  // with the new one.
+  const requestId = ++audioRequestId;
+
+  // Stop previous online audio
   if(currentAudio){
     try{
       currentAudio.pause();
-      currentAudio.currentTime = 0;
+      currentAudio.removeAttribute("src");
+      currentAudio.load();
     }catch(e){}
     currentAudio = null;
   }
 
+  // Stop previous browser speech
   if("speechSynthesis" in window){
-    window.speechSynthesis.cancel();
+    try{
+      window.speechSynthesis.cancel();
+    }catch(e){}
   }
 
-  // Online Devanagari/Hindi voice.
-  // Internet is required for this primary pronunciation method.
+  /*
+   * Online Hindi/Devanagari pronunciation.
+   *
+   * A unique cache-busting value is added so mobile browsers
+   * request fresh audio every time.
+   */
   const onlineUrl =
     "https://translate.google.com/translate_tts" +
     "?ie=UTF-8&client=tw-ob&tl=hi&q=" +
-    encodeURIComponent(text);
+    encodeURIComponent(text) +
+    "&cb=" + Date.now();
 
   const audio = new Audio();
   currentAudio = audio;
+
   audio.preload = "auto";
   audio.playbackRate = 0.9;
 
   let fallbackUsed = false;
 
   const useBrowserFallback = () => {
-    if(fallbackUsed) return;
+
+    if(fallbackUsed || requestId !== audioRequestId) return;
+
     fallbackUsed = true;
 
-    console.log("Online pronunciation unavailable. Using browser TTS fallback.");
+    console.log("Online pronunciation unavailable. Using browser TTS.");
 
     if(!("speechSynthesis" in window)){
-      showToast("Speech is not available. Please check your internet connection.");
+      showToast("Speech is not available on this phone.");
       return;
     }
 
+    try{
+      window.speechSynthesis.cancel();
+    }catch(e){}
+
     const utterance = new SpeechSynthesisUtterance(text);
+
     utterance.rate = 0.62;
     utterance.pitch = 1;
     utterance.volume = 1;
 
     const voices = window.speechSynthesis.getVoices();
-    console.log("Available voices:", voices);
 
     const preferred =
       voices.find(v => /^sa(-|_)/i.test(v.lang)) ||
@@ -263,38 +285,109 @@ function speakText(text){
     if(preferred){
       utterance.voice = preferred;
       utterance.lang = preferred.lang;
-      console.log("Using fallback voice:", preferred.name, preferred.lang);
+
+      console.log(
+        "Using fallback voice:",
+        preferred.name,
+        preferred.lang
+      );
     }else{
-      utterance.lang = "en-IN";
+      utterance.lang = "hi-IN";
     }
 
-    utterance.onstart = () => console.log("🔊 Browser fallback started:", text);
-    utterance.onend = () => console.log("✅ Browser fallback finished:", text);
-    utterance.onerror = e => console.error("❌ Browser speech error:", e.error);
+    utterance.onstart = () => {
+      console.log("🔊 Browser speech started:", text);
+    };
 
-    setTimeout(() => window.speechSynthesis.speak(utterance), 80);
+    utterance.onend = () => {
+      console.log("✅ Browser speech finished:", text);
+    };
+
+    utterance.onerror = e => {
+      console.error("❌ Browser speech error:", e.error);
+    };
+
+    // Small delay helps mobile Chrome/Safari
+    // start speech after the previous speech is cancelled.
+    setTimeout(() => {
+
+      if(requestId !== audioRequestId) return;
+
+      try{
+        window.speechSynthesis.speak(utterance);
+      }catch(e){
+        console.error("Speech failed:", e);
+      }
+
+    }, 100);
   };
 
   audio.onplay = () => {
-    console.log("🔊 Online Sanskrit/Devanagari pronunciation started:", text);
+
+    if(requestId !== audioRequestId){
+      try{
+        audio.pause();
+      }catch(e){}
+      return;
+    }
+
+    console.log(
+      "🔊 Online pronunciation started:",
+      text
+    );
   };
 
   audio.onended = () => {
-    console.log("✅ Online pronunciation finished:", text);
-    currentAudio = null;
+
+    if(requestId === audioRequestId){
+      console.log(
+        "✅ Online pronunciation finished:",
+        text
+      );
+
+      currentAudio = null;
+    }
   };
 
   audio.onerror = () => {
-    console.warn("Online pronunciation could not be played.");
-    currentAudio = null;
+
+    if(requestId !== audioRequestId) return;
+
+    console.warn(
+      "Online pronunciation failed. Trying browser voice..."
+    );
+
+    if(currentAudio === audio){
+      currentAudio = null;
+    }
+
     useBrowserFallback();
   };
 
+  // Set the NEW audio source
   audio.src = onlineUrl;
 
-  audio.play().catch(() => {
-    audio.onerror();
-  });
+  // Important for mobile browsers
+  audio.load();
+
+  const playAudio = audio.play();
+
+  if(playAudio !== undefined){
+
+    playAudio.catch(error => {
+
+      console.warn(
+        "Mobile audio play failed:",
+        error
+      );
+
+      if(requestId === audioRequestId){
+        useBrowserFallback();
+      }
+
+    });
+
+  }
 }
 
 function showToast(message){
