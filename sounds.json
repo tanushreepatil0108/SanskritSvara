@@ -1,0 +1,442 @@
+[
+  {
+    "character": "अ",
+    "type": "Vowel",
+    "category": "Svara",
+    "varga": "—",
+    "place": "Throat",
+    "voicing": "Voiced",
+    "aspiration": "Not Applicable",
+    "example": "अग्निः"
+  },
+  {
+    "character": "आ",
+    "type": "Vowel",
+    "category": "Svara",
+    "varga": "—",
+    "place": "Throat",
+    "voicing": "Voiced",
+    "aspiration": "Not Applicable",
+    "example": "आकाशः"
+  },
+  {
+    "character": "इ",
+    "type": "Vowel",
+    "category": "Svara",
+    "varga": "—",
+    "place": "Palate",
+    "voicing": "Voiced",
+    "aspiration": "Not Applicable",
+    "example": "इति"
+  },
+  {
+    "character": "ई",
+    "type": "Vowel",
+    "category": "Svara",
+    "varga": "—",
+    "place": "Palate",
+    "voicing": "Voiced",
+    "aspiration": "Not Applicable",
+    "example": "ईशः"
+  },
+  {
+    "character": "उ",
+    "type": "Vowel",
+    "category": "Svara",
+    "varga": "—",
+    "place": "Lips",
+    "voicing": "Voiced",
+    "aspiration": "Not Applicable",
+    "example": "उदकम्"
+  },
+  {
+    "character": "ऊ",
+    "type": "Vowel",
+    "category": "Svara",
+    "varga": "—",
+    "place": "Lips",
+    "voicing": "Voiced",
+    "aspiration": "Not Applicable",
+    "example": "ऊर्णा"
+  },
+  {
+    "character": "ऋ",
+    "type": "Vowel",
+    "category": "Svara",
+    "varga": "—",
+    "place": "Retroflex",
+    "voicing": "Voiced",
+    "aspiration": "Not Applicable",
+    "example": "ऋषिः"
+  },
+  {
+    "character": "ए",
+    "type": "Vowel",
+    "category": "Svara",
+    "varga": "—",
+    "place": "Throat-Palate",
+    "voicing": "Voiced",
+    "aspiration": "Not Applicable",
+    "example": "एकम्"
+  },
+  {
+    "character": "ऐ",
+    "type": "Vowel",
+    "category": "Svara",
+    "varga": "—",
+    "place": "Throat-Palate",
+    "voicing": "Voiced",
+    "aspiration": "Not Applicable",
+    "example": "ऐश्वर्यम्"
+  },
+  {
+    "character": "ओ",
+    "type": "Vowel",
+    "category": "Svara",
+    "varga": "—",
+    "place": "Throat-Lips",
+    "voicing": "Voiced",
+    "aspiration": "Not Applicable",
+    "example": "ओजः"
+  },
+  {
+    "character": "औ",
+    "type": "Vowel",
+    "category": "Svara",
+    "varga": "—",
+    "place": "Throat-Lips",
+    "voicing": "Voiced",
+    "aspiration": "Not Applicable",
+    "example": "औषधम्"
+  },
+  {
+    "character": "क",
+    "type": "Consonant",
+    "category": "Vyanjana",
+    "varga": "Ka-varga",
+    "place": "Velar",
+    "voicing": "Unvoiced",
+    "aspiration": "Unaspirated",
+    "example": ""
+  },
+  {
+    "character": "ख",
+    "type": "Consonant",
+    "category": "Vyanjana",
+    "varga": "Ka-varga",
+    "place": "Velar",
+    "voicing": "Unvoiced",
+    "aspiration": "Aspirated",
+    "example": ""
+  },
+  {
+    "character": "ग",
+    "type": "Consonant",
+    "category": "Vyanjana",
+    "varga": "Ka-varga",
+    "place": "Velar",
+    "voicing": "Voiced",
+    "aspiration": "Unaspirated",
+    "example": ""
+  },
+  {
+    "character": "घ",
+    "type": "Consonant",
+    "category": "Vyanjana",
+    "varga": "Ka-varga",
+    "place": "Velar",
+    "voicing": "Voiced",
+    "aspiration": "Aspirated",
+    "example": ""
+  },
+  {
+    "character": "ङ",
+    "type": "Consonant",
+    "category": "Vyanjana",
+    "varga": "Ka-varga",
+    "place": "Velar",
+    "voicing": "Voiced",
+    "aspiration": "Nasal",
+    "example": ""
+  },
+  {
+    "character": "च",
+    "type": "Consonant",
+    "category": "Vyanjana",
+    "varga": "Cha-varga",
+    "place": "Palatal",
+    "voicing": "Unvoiced",
+    "aspiration": "Unaspirated",
+    "example": ""
+  },
+  {
+    "character": "छ",
+    "type": "Consonant",
+    "category": "Vyanjana",
+    "varga": "Cha-varga",
+    "place": "Palatal",
+    "voicing": "Unvoiced",
+    "aspiration": "Aspirated",
+    "example": ""
+  },
+  {
+    "character": "ज",
+    "type": "Consonant",
+    "category": "Vyanjana",
+    "varga": "Cha-varga",
+    "place": "Palatal",
+    "voicing": "Voiced",
+    "aspiration": "Unaspirated",
+    "example": ""
+  },
+  {
+    "character": "झ",
+    "type": "Consonant",
+    "category": "Vyanjana",
+    "varga": "Cha-varga",
+    "place": "Palatal",
+    "voicing": "Voiced",
+    "aspiration": "Aspirated",
+    "example": ""
+  },
+  {
+    "character": "ञ",
+    "type": "Consonant",
+    "category": "Vyanjana",
+    "varga": "Cha-varga",
+    "place": "Palatal",
+    "voicing": "Voiced",
+    "aspiration": "Nasal",
+    "example": ""
+  },
+  {
+    "character": "ट",
+    "type": "Consonant",
+    "category": "Vyanjana",
+    "varga": "Ta-varga",
+    "place": "Retroflex",
+    "voicing": "Unvoiced",
+    "aspiration": "Unaspirated",
+    "example": ""
+  },
+  {
+    "character": "ठ",
+    "type": "Consonant",
+    "category": "Vyanjana",
+    "varga": "Ta-varga",
+    "place": "Retroflex",
+    "voicing": "Unvoiced",
+    "aspiration": "Aspirated",
+    "example": ""
+  },
+  {
+    "character": "ड",
+    "type": "Consonant",
+    "category": "Vyanjana",
+    "varga": "Ta-varga",
+    "place": "Retroflex",
+    "voicing": "Voiced",
+    "aspiration": "Unaspirated",
+    "example": ""
+  },
+  {
+    "character": "ढ",
+    "type": "Consonant",
+    "category": "Vyanjana",
+    "varga": "Ta-varga",
+    "place": "Retroflex",
+    "voicing": "Voiced",
+    "aspiration": "Aspirated",
+    "example": ""
+  },
+  {
+    "character": "ण",
+    "type": "Consonant",
+    "category": "Vyanjana",
+    "varga": "Ta-varga",
+    "place": "Retroflex",
+    "voicing": "Voiced",
+    "aspiration": "Nasal",
+    "example": ""
+  },
+  {
+    "character": "त",
+    "type": "Consonant",
+    "category": "Vyanjana",
+    "varga": "Ta-varga",
+    "place": "Dental",
+    "voicing": "Unvoiced",
+    "aspiration": "Unaspirated",
+    "example": ""
+  },
+  {
+    "character": "थ",
+    "type": "Consonant",
+    "category": "Vyanjana",
+    "varga": "Ta-varga",
+    "place": "Dental",
+    "voicing": "Unvoiced",
+    "aspiration": "Aspirated",
+    "example": ""
+  },
+  {
+    "character": "द",
+    "type": "Consonant",
+    "category": "Vyanjana",
+    "varga": "Ta-varga",
+    "place": "Dental",
+    "voicing": "Voiced",
+    "aspiration": "Unaspirated",
+    "example": ""
+  },
+  {
+    "character": "ध",
+    "type": "Consonant",
+    "category": "Vyanjana",
+    "varga": "Ta-varga",
+    "place": "Dental",
+    "voicing": "Voiced",
+    "aspiration": "Aspirated",
+    "example": ""
+  },
+  {
+    "character": "न",
+    "type": "Consonant",
+    "category": "Vyanjana",
+    "varga": "Ta-varga",
+    "place": "Dental",
+    "voicing": "Voiced",
+    "aspiration": "Nasal",
+    "example": ""
+  },
+  {
+    "character": "प",
+    "type": "Consonant",
+    "category": "Vyanjana",
+    "varga": "Pa-varga",
+    "place": "Labial",
+    "voicing": "Unvoiced",
+    "aspiration": "Unaspirated",
+    "example": ""
+  },
+  {
+    "character": "फ",
+    "type": "Consonant",
+    "category": "Vyanjana",
+    "varga": "Pa-varga",
+    "place": "Labial",
+    "voicing": "Unvoiced",
+    "aspiration": "Aspirated",
+    "example": ""
+  },
+  {
+    "character": "ब",
+    "type": "Consonant",
+    "category": "Vyanjana",
+    "varga": "Pa-varga",
+    "place": "Labial",
+    "voicing": "Voiced",
+    "aspiration": "Unaspirated",
+    "example": ""
+  },
+  {
+    "character": "भ",
+    "type": "Consonant",
+    "category": "Vyanjana",
+    "varga": "Pa-varga",
+    "place": "Labial",
+    "voicing": "Voiced",
+    "aspiration": "Aspirated",
+    "example": ""
+  },
+  {
+    "character": "म",
+    "type": "Consonant",
+    "category": "Vyanjana",
+    "varga": "Pa-varga",
+    "place": "Labial",
+    "voicing": "Voiced",
+    "aspiration": "Nasal",
+    "example": ""
+  },
+  {
+    "character": "य",
+    "type": "Consonant",
+    "category": "Antastha",
+    "varga": "—",
+    "place": "Palatal",
+    "voicing": "Voiced",
+    "aspiration": "Unaspirated",
+    "example": ""
+  },
+  {
+    "character": "र",
+    "type": "Consonant",
+    "category": "Antastha",
+    "varga": "—",
+    "place": "Retroflex",
+    "voicing": "Voiced",
+    "aspiration": "Unaspirated",
+    "example": ""
+  },
+  {
+    "character": "ल",
+    "type": "Consonant",
+    "category": "Antastha",
+    "varga": "—",
+    "place": "Dental",
+    "voicing": "Voiced",
+    "aspiration": "Unaspirated",
+    "example": ""
+  },
+  {
+    "character": "व",
+    "type": "Consonant",
+    "category": "Antastha",
+    "varga": "—",
+    "place": "Labial",
+    "voicing": "Voiced",
+    "aspiration": "Unaspirated",
+    "example": ""
+  },
+  {
+    "character": "श",
+    "type": "Consonant",
+    "category": "Ushman",
+    "varga": "—",
+    "place": "Palatal",
+    "voicing": "Unvoiced",
+    "aspiration": "Unaspirated",
+    "example": ""
+  },
+  {
+    "character": "ष",
+    "type": "Consonant",
+    "category": "Ushman",
+    "varga": "—",
+    "place": "Retroflex",
+    "voicing": "Unvoiced",
+    "aspiration": "Unaspirated",
+    "example": ""
+  },
+  {
+    "character": "स",
+    "type": "Consonant",
+    "category": "Ushman",
+    "varga": "—",
+    "place": "Dental",
+    "voicing": "Unvoiced",
+    "aspiration": "Unaspirated",
+    "example": ""
+  },
+  {
+    "character": "ह",
+    "type": "Consonant",
+    "category": "Ushman",
+    "varga": "—",
+    "place": "Throat",
+    "voicing": "Voiced",
+    "aspiration": "Aspirated",
+    "example": ""
+  }
+]

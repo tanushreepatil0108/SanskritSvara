@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SanskritSvara — Smart Sanskrit Sound & Word Lab</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div>
+    <p class="eyebrow">SMART SANSKRIT LANGUAGE TECHNOLOGY</p>
+    <h1>🌸 SanskritSvara</h1>
+    <p>Interactive Sound Lab + Intelligent Word Dictionary</p>
+  </div>
+  <div class="status" id="dataStatus">Loading data…</div>
+</header>
+
+<main class="container">
+  <nav class="tabs">
+    <button class="tab active" data-tab="soundTab">🔊 Sound Lab</button>
+    <button class="tab" data-tab="wordTab">📖 Word Lab</button>
+    <button class="tab" data-tab="aboutTab">💡 How it works</button>
+  </nav>
+
+  <section id="soundTab" class="tab-panel active">
+    <div class="card">
+      <div class="section-title">
+        <div><h2>Pronounce & Classify a Sanskrit Sound</h2><p>Enter one Devanagari character and inspect its articulation pattern.</p></div>
+        <button class="small-btn" id="voiceTestBtn">🔊 Test Pronunciation</button>
+      </div>
+      <div class="search-row">
+        <input id="soundInput" maxlength="2" placeholder="उदा. क, ख, ग, अ">
+        <button class="primary" id="analyzeSoundBtn">Analyze Sound</button>
+      </div>
+      <div id="soundResult" class="result hidden"></div>
+    </div>
+
+    <div class="card">
+      <div class="section-title"><div><h2>Interactive Sanskrit Sound Chart</h2><p>Click a sound to view its classification and hear it.</p></div></div>
+      <div id="soundFilters" class="filters"></div>
+      <div id="soundChart" class="sound-chart"></div>
+    </div>
+  </section>
+
+  <section id="wordTab" class="tab-panel">
+    <div class="card">
+      <h2>📖 Sanskrit Word Analyzer</h2>
+      <p>Analyze meaning, root, prefix, suffix, grammar, formation and phonetic units.</p>
+      <div class="search-row">
+        <input id="wordInput" placeholder="उदा. पठति, गच्छति, अनुगच्छति">
+        <button class="primary" id="analyzeWordBtn">🔎 Analyze Word</button>
+      </div>
+      <div class="try-row"><strong>Try:</strong><div id="wordSuggestions"></div></div>
+      <div id="wordResult" class="hidden"></div>
+    </div>
+  </section>
+
+  <section id="aboutTab" class="tab-panel">
+    <div class="card">
+      <h2>💡 Application Logic</h2>
+      <div class="logic-grid">
+        <div><b>1. Sound classification</b><p>Input character → search sounds.json → identify vowel/consonant → show place, voicing, aspiration and varga.</p></div>
+        <div><b>2. Word analysis</b><p>Input word → search words.json → return meaning, root, prefix, suffix, tense, person, number and formation.</p></div>
+        <div><b>3. Phonetic engine</b><p>The stored phonetic units are rendered separately, e.g. <strong>ग + च् + छ + ति</strong>. Clicking a unit opens its sound analysis.</p></div>
+        <div><b>4. Pronunciation</b><p>The browser Speech Synthesis API is used with a safe voice fallback. The app also shows available voices for troubleshooting.</p></div>
+        <div><b>5. Language technology</b><p>The same structured data can later be connected to NLP, speech recognition, morphology rules and a mobile application.</p></div>
+        <div><b>6. Digital preservation</b><p>Sanskrit lexical and phonetic information is stored in structured Unicode JSON, making it searchable and reusable by software.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="toast" class="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

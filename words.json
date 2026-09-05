@@ -1,0 +1,223 @@
+[
+  {
+    "word": "पठति",
+    "transliteration": "paṭhati",
+    "meanings": [
+      "reads",
+      "studies"
+    ],
+    "root": "पठ्",
+    "rootTransliteration": "paṭh",
+    "rootMeaning": "to read or study",
+    "type": "Verb",
+    "prefix": "None",
+    "prefixMeaning": "No prefix",
+    "suffix": "ति",
+    "suffixType": "verbal ending",
+    "suffixMeaning": "third person singular",
+    "lakara": "Laṭ",
+    "tense": "Present",
+    "person": "Third",
+    "number": "Singular",
+    "pada": "Parasmaipada",
+    "phonetics": [
+      "प",
+      "ठ",
+      "ति"
+    ],
+    "formation": "पठ् + ति",
+    "explanation": "पठ् means 'to read or study'. The form पठति expresses a third-person singular present action.",
+    "examples": [
+      "बालकः पुस्तकं पठति।"
+    ],
+    "related": [
+      "पठामि",
+      "पठसि"
+    ]
+  },
+  {
+    "word": "गच्छति",
+    "transliteration": "gacchati",
+    "meanings": [
+      "goes",
+      "moves"
+    ],
+    "root": "गम्",
+    "rootTransliteration": "gam",
+    "rootMeaning": "to go",
+    "type": "Verb",
+    "prefix": "None",
+    "prefixMeaning": "No prefix",
+    "suffix": "ति",
+    "suffixType": "verbal ending",
+    "suffixMeaning": "third person singular",
+    "lakara": "Laṭ",
+    "tense": "Present",
+    "person": "Third",
+    "number": "Singular",
+    "pada": "Parasmaipada",
+    "phonetics": [
+      "ग",
+      "च्",
+      "छ",
+      "ति"
+    ],
+    "formation": "गम् → गच्छ् + ति",
+    "explanation": "The verb form गच्छति means 'goes'. Its visible phonetic units can be studied as ग + च् + छ + ति.",
+    "examples": [
+      "सः विद्यालयं गच्छति।"
+    ],
+    "related": [
+      "गच्छामि",
+      "गच्छसि"
+    ]
+  },
+  {
+    "word": "प्रगच्छति",
+    "transliteration": "pragacchati",
+    "meanings": [
+      "goes forward",
+      "proceeds"
+    ],
+    "root": "गम्",
+    "rootTransliteration": "gam",
+    "rootMeaning": "to go",
+    "type": "Verb",
+    "prefix": "प्र",
+    "prefixMeaning": "forward / forth",
+    "suffix": "ति",
+    "suffixType": "verbal ending",
+    "suffixMeaning": "third person singular",
+    "lakara": "Laṭ",
+    "tense": "Present",
+    "person": "Third",
+    "number": "Singular",
+    "pada": "Parasmaipada",
+    "phonetics": [
+      "प्र",
+      "ग",
+      "च्",
+      "छ",
+      "ति"
+    ],
+    "formation": "प्र + गम् → प्रगच्छ् + ति",
+    "explanation": "The prefix प्र adds the sense of forward movement to the root गम्. The resulting form प्रगच्छति means 'proceeds' or 'goes forward'.",
+    "examples": [
+      "सः शीघ्रं प्रगच्छति।"
+    ],
+    "related": [
+      "गच्छति"
+    ]
+  },
+  {
+    "word": "अनुगच्छति",
+    "transliteration": "anugacchati",
+    "meanings": [
+      "follows",
+      "goes after"
+    ],
+    "root": "गम्",
+    "rootTransliteration": "gam",
+    "rootMeaning": "to go",
+    "type": "Verb",
+    "prefix": "अनु",
+    "prefixMeaning": "after / following",
+    "suffix": "ति",
+    "suffixType": "verbal ending",
+    "suffixMeaning": "third person singular",
+    "lakara": "Laṭ",
+    "tense": "Present",
+    "person": "Third",
+    "number": "Singular",
+    "pada": "Parasmaipada",
+    "phonetics": [
+      "अ",
+      "नु",
+      "ग",
+      "च्",
+      "छ",
+      "ति"
+    ],
+    "formation": "अनु + गम् → अनुगच्छ् + ति",
+    "explanation": "The prefix अनु conveys the sense of following or going after. अनुगच्छति therefore means 'follows' or 'goes after'.",
+    "examples": [
+      "बालकः गुरुम् अनुगच्छति।"
+    ],
+    "related": [
+      "गच्छति",
+      "प्रगच्छति"
+    ]
+  },
+  {
+    "word": "नमस्ते",
+    "transliteration": "namaste",
+    "meanings": [
+      "salutations to you",
+      "greetings"
+    ],
+    "root": "नम्",
+    "rootTransliteration": "nam",
+    "rootMeaning": "to bow",
+    "type": "Expression",
+    "prefix": "None",
+    "prefixMeaning": "No prefix",
+    "suffix": "ते",
+    "suffixType": "ending",
+    "suffixMeaning": "to you",
+    "lakara": "—",
+    "tense": "—",
+    "person": "—",
+    "number": "—",
+    "pada": "—",
+    "phonetics": [
+      "न",
+      "म",
+      "स्",
+      "ते"
+    ],
+    "formation": "नमस् + ते",
+    "explanation": "नमस्ते is a traditional greeting derived from नमस् with ते, conveying salutations to you.",
+    "examples": [
+      "नमस्ते गुरो।"
+    ],
+    "related": [
+      "नमः"
+    ]
+  },
+  {
+    "word": "करोति",
+    "transliteration": "karoti",
+    "meanings": [
+      "does",
+      "makes"
+    ],
+    "root": "कृ",
+    "rootTransliteration": "kṛ",
+    "rootMeaning": "to do or make",
+    "type": "Verb",
+    "prefix": "None",
+    "prefixMeaning": "No prefix",
+    "suffix": "ति",
+    "suffixType": "verbal ending",
+    "suffixMeaning": "third person singular",
+    "lakara": "Laṭ",
+    "tense": "Present",
+    "person": "Third",
+    "number": "Singular",
+    "pada": "Parasmaipada",
+    "phonetics": [
+      "क",
+      "रो",
+      "ति"
+    ],
+    "formation": "कृ → कर् + ओ + ति",
+    "explanation": "करोति is the third-person singular present form of कृ, meaning 'does' or 'makes'.",
+    "examples": [
+      "सः कार्यं करोति।"
+    ],
+    "related": [
+      "करोमि",
+      "करोषि"
+    ]
+  }
+]
